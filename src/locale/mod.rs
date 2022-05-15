@@ -28,11 +28,13 @@ impl Locale {
     pub fn load(locale: &str) -> Self {
         match locale {
             "en" => en::load(),
+            "pt_BR" => pt_br::load(),
             _ => unimplemented!(),
         }
     }
 }
 
 pub mod en;
+pub mod pt_br;
 mod es;
 mod fr;
